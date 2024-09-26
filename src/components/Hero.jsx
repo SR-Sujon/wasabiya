@@ -89,9 +89,9 @@ const Hero = () => {
               <h2 className="h1 hero-title">
                 Discover Nature's Heartbeat in Nagano
               </h2>
-              <p className="hero-text">
-                Stay in Nozawa Onsen and Hakuba Village!
-              </p>
+              <h3 className="hero-text">
+                Stay in the heart of Nozawa Onsen and Hakuba Village!
+              </h3>
             </div>
 
             <div className="hero-banner">
