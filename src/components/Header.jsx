@@ -24,12 +24,12 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#featured-car" className="navbar-link" data-nav-link>
+              <a href="#featured-ski" className="navbar-link" data-nav-link>
                 Ski Rentals
               </a>
             </li>
             <li>
-              <a href="#accommodation" className="navbar-link" data-nav-link>
+              <a href="#featured-accommodation" className="navbar-link" data-nav-link>
                 Accommodation
               </a>
             </li>
@@ -61,7 +61,7 @@ const Header = () => {
           </div>
 
           <a
-            href="#featured-car"
+            href="#home"
             className="btn"
             aria-labelledby="aria-label-txt"
           >
@@ -69,7 +69,7 @@ const Header = () => {
             <span id="aria-label-txt">Book Now!</span>
           </a>
 
-          <a href="#" className="btn user-btn" aria-label="Profile">
+          <a href="#home" className="btn user-btn" aria-label="Profile">
             <i class="fa-solid fa-user"></i>
           </a>
 

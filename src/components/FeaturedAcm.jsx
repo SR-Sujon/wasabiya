@@ -31,10 +31,50 @@ const FeaturedAcm = () => {
       price: 140,
       reviews: 105,
     },
+    {
+      imgSrc:
+        "./assets/images/accommodation/hotels/tanoki_nozowa.png",
+      title: "Tanuki Nozawa",
+      location: "Nozawa Onsen",
+      guests: "2 Guests",
+      amenities: ["Air Conditioning", "Free Parking", "Flat-screen TV"],
+      price: 140,
+      reviews: 97,
+    },
+    {
+      imgSrc:
+        "./assets/images/accommodation/hotels/no_utopia.jpg",
+      title: "Nozawa Onsen Utopia",
+      location: "Nozawa Onsen",
+      guests: "2-4 Guests",
+      amenities: ["Air Conditioning", "Free Parking", "Free Wifi"],
+      price: 120,
+      reviews: 93,
+    },
+    {
+      imgSrc:
+        "./assets/images/accommodation/hotels/kawahiro.JPG",
+      title: "Kawahiro",
+      location: "Nozawa Onsen",
+      guests: "2-4 Guests",
+      amenities: ["Air Conditioning", "Free Parking", "Breakfast Included"],
+      price: 130,
+      reviews: 90,
+    },
+    {
+      imgSrc:
+        "./assets/images/accommodation/hotels/ryokan.jpg",
+      title: "Sumiyosiya Ryokan",
+      location: "Nozawa Onsen",
+      guests: "2-3 Guests",
+      amenities: ["Air Conditioning", "Free Wifi", "Breakfast Included"],
+      price: 110,
+      reviews: 85,
+    },
   ];
 
   return (
-    <section className="section featured-car" id="featured-car">
+    <section className="section featured-car" id="featured-accommodation">
       <div className="container">
         <div className="title-wrapper">
           <h2 className="h2 section-title">Featured Accommodation</h2>
