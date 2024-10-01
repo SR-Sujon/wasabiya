@@ -1,8 +1,18 @@
-// src/components/Header.js
-import React from "react";
+// src/components/Header.jsx
+import React from 'react';
 import "../styles/style.css"; // Adjust the path if necessary
 
-const Header = () => {
+const Header = ({ onLoginClick, onNavClick }) => { // Receive the prop
+
+  const handleProfileClick = (event) => {
+    event.preventDefault(); // Prevent default anchor behavior
+    onLoginClick(); // Trigger the login click function
+  };
+
+  const handleNavLinkClick = () => {
+    onNavClick(); // Trigger the nav click function
+  };
+
   return (
     <header className="header" data-header>
       <div className="container">
@@ -19,31 +29,31 @@ const Header = () => {
         <nav className="navbar" data-navbar>
           <ul className="navbar-list">
             <li>
-              <a href="#home" className="navbar-link" data-nav-link>
+              <a href="#home" className="navbar-link" data-nav-link onClick={handleNavLinkClick}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#featured-ski" className="navbar-link" data-nav-link>
-                Ski Rentals
-              </a>
-            </li>
-            <li>
-              <a href="#featured-accommodation" className="navbar-link" data-nav-link>
-                Accommodation
+              <a href="https://wasabiya.co.jp/" className="navbar-link" data-nav-link onClick={handleNavLinkClick}>
+                Our Facilities
               </a>
             </li>
             <li>
               <a
-                href="https://wasabiya.co.jp/"
+                href="#featured-accommodation"
                 className="navbar-link"
-                data-nav-link
+                data-nav-link onClick={handleNavLinkClick}
               >
-                About Us
+                Accommodation
               </a>
             </li>
             <li>
-              <a href="#blog" className="navbar-link" data-nav-link>
+              <a href="#featured-ski" className="navbar-link" data-nav-link onClick={handleNavLinkClick}>
+                Ski Rentals
+              </a>
+            </li>
+            <li>
+              <a href="#blog" className="navbar-link" data-nav-link onClick={handleNavLinkClick}>
                 Blog
               </a>
             </li>
@@ -60,28 +70,14 @@ const Header = () => {
             </span>
           </div>
 
-          <a
-            href="#home"
-            className="btn"
-            aria-labelledby="aria-label-txt"
-          >
+          <a href="#home" className="btn" aria-labelledby="aria-label-txt">
             <ion-icon name="car-outline"></ion-icon>
             <span id="aria-label-txt">Book Now!</span>
           </a>
 
-          <a href="#home" className="btn user-btn" aria-label="Profile">
-            <i class="fa-solid fa-user"></i>
-          </a>
-
-          <button
-            className="nav-toggle-btn"
-            data-nav-toggle-btn
-            aria-label="Toggle Menu"
-          >
-            <span className="one"></span>
-            <span className="two"></span>
-            <span className="three"></span>
-          </button>
+          <a href="#home" className="btn user-btn" aria-label="Profile" onClick={handleProfileClick}>
+            <i className="fa-solid fa-user"></i>
+          </a> {/* Update the Profile button */}
         </div>
       </div>
     </header>

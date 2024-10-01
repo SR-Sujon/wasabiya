@@ -80,6 +80,7 @@ const Hero = () => {
     console.log(formData);
   };
 
+
   return (
     <main>
       <article>
@@ -154,38 +155,21 @@ const Hero = () => {
                 </select>
               </div>
 
-              {/* Price Range */}
+              {/* Number of Adults */}
               <div className="input-wrapper">
-                <label htmlFor="price-per-night" className="input-label">
-                  Max. Price Per Night ($)
-                </label>
-                <input
-                  type="number"
-                  name="pricePerNight"
-                  id="price-per-night"
-                  className="input-field"
-                  placeholder="Add a maximum price"
-                  value={formData.pricePerNight}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
-              {/* Number of Guests */}
-              <div className="input-wrapper">
-                <label htmlFor="guests" className="input-label">
-                  Number of Guests
+                <label htmlFor="adults" className="input-label">
+                  Adults
                 </label>
                 <select
-                  name="guests"
-                  id="guests"
+                  name="adults"
+                  id="adults"
                   className="input-field"
-                  value={formData.guests}
+                  value={formData.adults}
                   onChange={handleChange}
                   required
                 >
                   <option value="" disabled>
-                    Select number of guests
+                    Select number of adults
                   </option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -193,6 +177,22 @@ const Hero = () => {
                   <option value="4">4</option>
                   <option value="5+">5+</option>
                 </select>
+              </div>
+
+              {/* Number of Children (Optional) */}
+              <div className="input-wrapper">
+                <label htmlFor="number-of-children" className="input-label">
+                  Children (if any)
+                </label>
+                <input
+                  type="number"
+                  name="numberOfChildren"
+                  id="number-of-children"
+                  className="input-field"
+                  value={formData.numberOfChildren || ""}
+                  onChange={handleChange}
+                  placeholder="Enter a number"
+                />
               </div>
 
               {/* Check-in Date */}
@@ -205,6 +205,11 @@ const Hero = () => {
                   name="checkInDate"
                   id="check-in-date"
                   className="input-field"
+                  min={
+                    new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+                      .toISOString()
+                      .split("T")[0]
+                  } // Minimum date 7 days from today
                   value={formData.checkInDate}
                   onChange={handleChange}
                   required
@@ -221,6 +226,16 @@ const Hero = () => {
                   name="checkOutDate"
                   id="check-out-date"
                   className="input-field"
+                  min={
+                    formData.checkInDate
+                      ? new Date(
+                          new Date(formData.checkInDate).getTime() +
+                            24 * 60 * 60 * 1000
+                        )
+                          .toISOString()
+                          .split("T")[0]
+                      : ""
+                  } // Minimum check-out date 1 day after check-in
                   value={formData.checkOutDate}
                   onChange={handleChange}
                   required

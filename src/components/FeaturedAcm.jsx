@@ -124,7 +124,7 @@ const FeaturedAcm = () => {
                     <p className="card-price">
                       <strong>${acc.price}</strong> / night
                     </p>
-                    <button className="btn">Book now</button>
+                    <button className="btn">Show Prices</button>
                     <br />
                   </div>
                   <div className="card-review-wrapper">

@@ -16,7 +16,6 @@ const PreviewAcm = () => {
               height="315"
               src="https://www.youtube.com/embed/AckqWh9hgSA?si=pcWYzEWdGR_c5zWU"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
@@ -26,7 +25,6 @@ const PreviewAcm = () => {
               height="315"
               src="https://www.youtube.com/embed/vM220pspGFA?si=yy8CUlOPlNPrd7Uv"
               title="YouTube video player"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen

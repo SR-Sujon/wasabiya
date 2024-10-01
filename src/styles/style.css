@@ -271,7 +271,7 @@ a {
   left: 0;
   width: 100%;
   transition: var(--transition);
-  z-index: 4;
+  z-index: 1000;
 }
 
 .header.active {
@@ -553,7 +553,7 @@ a {
 }
 
 .card-banner:hover::after {
-  content: "Hotel Room";
+  content: "See More";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -831,6 +831,7 @@ a {
 
 .sub-preview{
   text-align: center;
+  font-weight: bolder;
 }
 
 /*-----------------------------------*\
@@ -1393,7 +1394,7 @@ a {
 
   .navbar-list {
     display: flex;
-    gap: 50px;
+    gap: 25px;
   }
 
   /**
