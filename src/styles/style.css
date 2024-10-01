@@ -456,7 +456,7 @@ a {
   #FEATURED CARD
 \*-----------------------------------*/
 
-.featured-car .title-wrapper {
+.featured-card .title-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -465,7 +465,7 @@ a {
   margin-bottom: 30px;
 }
 
-.featured-car-link {
+.featured-card-link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -473,20 +473,20 @@ a {
   font-size: var(--fs-6);
 }
 
-.featured-car-link span {
+.featured-card-link span {
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) span {
+.featured-card-link:is(:hover, :focus) span {
   color: var(--space-cadet);
 }
 
-.featured-car-link ion-icon {
+.featured-card-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) ion-icon {
+.featured-card-link:is(:hover, :focus) ion-icon {
   color: var(--carolina-blue);
 }
 

@@ -65,12 +65,12 @@ const FeaturedSkiRental = () => {
   ];
 
   return (
-    <section className="section featured-car" id="featured-ski">
+    <section className="section featured-card" id="featured-ski">
       <div className="container">
         <div className="title-wrapper">
           <h2 className="h2 section-title">Featured Ski Rental Shops</h2>
           {/**eslint-disable-next-line */}
-          <a href="#" className="featured-car-link">
+          <a href="#" className="featured-card-link">
             <span>View more</span>
           </a>
         </div>

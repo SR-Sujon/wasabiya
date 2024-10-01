@@ -74,11 +74,11 @@ const FeaturedAcm = () => {
   ];
 
   return (
-    <section className="section featured-car" id="featured-accommodation">
+    <section className="section featured-card" id="featured-accommodation">
       <div className="container">
         <div className="title-wrapper">
           <h2 className="h2 section-title">Featured Accommodation</h2>
-          <a href="#" className="featured-car-link">
+          <a href="#" className="featured-card-link">
             <span>View more</span>
           </a>
         </div>
