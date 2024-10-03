@@ -228,6 +228,7 @@ a {
   color: var(--space-cadet);
   font-family: var(--ff-nunito);
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .h1 {
@@ -398,9 +399,11 @@ a {
 }
 
 .hero-text {
+  font-size: var(--fs-4);
   color: var(--independence);
   line-height: 1.8;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 .hero-banner {

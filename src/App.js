@@ -11,6 +11,9 @@ import Login from './components/Login.jsx';
 import Carousel from './components/Carousel.jsx';
 import FeaturedSkiRental from './components/FeatureSkiRental.jsx';
 import PreviewSki from './components/PreviewSki.jsx';
+import AnimationSnow from './components/AnimationSnow.jsx';
+import AnimationSnowBoard from './components/AnimationSnowBoard.jsx';
+import AnimationPlaying from './components/AnimationPlaying.jsx';
 
 const App = () => {
     const [showLogin, setShowLogin] = useState(false); // State to track login button click
@@ -35,10 +38,13 @@ const App = () => {
                 <>
                     <Carousel/>
                     <Hero />
+                    <AnimationSnow/>
                     <FeaturesAcm />
                     <PreviewAcm />
+                    <AnimationSnowBoard/>
                     <FeaturedSkiRental/>
                     <PreviewSki/>
+                    <AnimationPlaying/>
                     <BlogsAcm />
                     <Footer />
                 </>

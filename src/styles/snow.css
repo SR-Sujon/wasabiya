@@ -1,0 +1,14 @@
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin-top: -10%;
+    margin-bottom: -10%;
+  }
+  
+  .gif-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
