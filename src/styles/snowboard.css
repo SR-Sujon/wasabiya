@@ -1,0 +1,15 @@
+.gif-container-sb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Full viewport height */
+    margin-top: 2%;
+  }
+  
+  .gif-container-sb img {
+    max-width: 100%;
+    height: 90%;
+  }
+
+  
+  
