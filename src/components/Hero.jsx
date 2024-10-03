@@ -24,7 +24,7 @@ const Hero = () => {
       alt: "Nozawa 2",
     },
     {
-      src: "./assets/images/views/nozawa_town_ice.jpg",
+      src: "./assets/images/views/Nozawa_town_ice.jpg",
       alt: "Nozawa 3",
     },
     {
