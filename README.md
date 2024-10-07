@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Wasabiya
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Inbound Accommodation and Ski Rental Management Web Application for Nozawa Onsen & Hakuba Village (Front-End)**
 
-## Available Scripts
+![image](https://github.com/user-attachments/assets/72d28e9c-79d8-4f6c-b715-2efc5375ccaf)
+![image](https://github.com/user-attachments/assets/1f66d008-4525-4477-9101-11c3e823c4bd)
 
-In the project directory, you can run:
+Wasabiya is a web application designed to streamline the management of inbound accommodation and ski rentals in the popular Japanese resorts of Nozawa Onsen and Hakuba Village. This user-friendly platform simplifies booking, rental management, and customer interactions, tailored specifically for businesses in these regions.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Accommodation Booking**: Efficient and streamlined booking process for guests, with options to view availability and pricing.
+- **Ski Rental Management**: Manage ski rentals, including inventory, pricing, and equipment availability.
+- **User-Friendly Interface**: Clean and intuitive UI designed for quick navigation and a smooth user experience.
+- **Responsive Design**: Optimized for various devices, providing seamless use across desktops, tablets, and mobile devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+### Front-End
+- **React.js**: Core framework for building dynamic user interfaces.
+- **HTML5 & CSS3**: Structuring and styling the web pages for a modern and responsive design.
+- **JavaScript**: For dynamic content and user interaction on the web pages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Back-End (To be integrated)
+- **Node.js**: Will be used for the back-end server-side application.
 
-### `npm run build`
+## Installation and Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/wasabiya.git
+```
+### 2. Install dependencies
+```bash
+cd wasabiya
+npm install
+```
+### 3. Start the application
+Run the front-end server:
+```bash
+npm start
+```
+The application will be running on http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Status
+Currently, the front-end is under active development with ongoing enhancements to both the booking and rental management features. Future updates include back-end integration for real-time data and user authentication.
 
-### `npm run eject`
+## Contributions
+Contributions are welcome! Please feel free to fork the repository, work on a new branch, and submit a pull request for review.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License. For more information, see the LICENSE file.
